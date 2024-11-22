@@ -3,6 +3,7 @@ using FK3_lokaverkefni.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FK3_lokaverkefni.Migrations
 {
     [DbContext(typeof(EmtbicelandDBContext))]
-    partial class EmtbicelandDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241122135339_urlDataAnnotation")]
+    partial class urlDataAnnotation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
